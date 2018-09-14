@@ -42,13 +42,20 @@ public class MenuOptions : MonoBehaviour
     public void StartAutonomousMode()
     {
         if (track == 0) {
-            SceneManager.LoadScene("LakeTrackAutonomous");
+            SceneManager.LoadScene("ParkingTrackAutonomous");
         } else {
             SceneManager.LoadScene("JungleTrackAutonomous");
         }
     }
 
     public void SetLakeTrack()
+    {
+        outlines [0].effectColor = new Color (0, 0, 0);
+        outlines [1].effectColor = new Color (255, 255, 255);
+        track = 0;
+    }
+
+    public void SetParkingTrack()
     {
         outlines [0].effectColor = new Color (0, 0, 0);
         outlines [1].effectColor = new Color (255, 255, 255);
