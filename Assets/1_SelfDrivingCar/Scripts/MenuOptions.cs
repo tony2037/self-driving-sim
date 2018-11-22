@@ -44,7 +44,7 @@ public class MenuOptions : MonoBehaviour
         if (track == 0) {
             SceneManager.LoadScene("ParkingTrackAutonomous");
         } else {
-            SceneManager.LoadScene("JungleTrackAutonomous");
+            SceneManager.LoadScene("ParkingTrackAutonomous_DataCollection");
         }
     }
 
